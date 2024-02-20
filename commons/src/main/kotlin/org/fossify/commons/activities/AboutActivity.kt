@@ -114,7 +114,7 @@ class AboutActivity : ComponentActivity() {
     ): Pair<Boolean, String> {
         val showWebsite = remember { resources.getBoolean(R.bool.show_donate_in_about) && !showExternalLinks }
         var version = intent.getStringExtra(APP_VERSION_NAME) ?: ""
-        if (baseConfig.appId.removeSuffix(".debug").endsWith(".pro")) {
+        if (baseConfig.appId.removeSuffix(".debug").endsWith(".pro") || true) {
             version += " ${getString(R.string.pro)}"
         }
         val fullVersion = remember { String.format(getString(R.string.version_placeholder, version)) }
@@ -270,26 +270,26 @@ class AboutActivity : ComponentActivity() {
     }
 
     private fun onGithubClick() {
-        launchViewIntent("https://github.com/FossifyOrg")
+        launchViewIntent("https://github.com/komalsinghgurjar")
     }
 
     private fun onRedditClick() {
-        launchViewIntent("https://www.reddit.com/r/Fossify")
+        launchViewIntent("https://www.reddit.com/r/komalsinghgurjar")
     }
 
 
     private fun onTelegramClick() {
-        launchViewIntent("https://t.me/Fossify")
+        launchViewIntent("https://t.me/komalsinghgurjar")
     }
 
 
     private fun onWebsiteClick() {
-        launchViewIntent("https://www.fossify.org/")
+        launchViewIntent("https://komalsinghgurjar.github.io/")
     }
 
     private fun onPrivacyPolicyClick() {
         val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("org.fossify.")
-        val url = "https://www.fossify.org/policy/$appId"
+        val url = "https://komalsinghgurjar.github.io/policy/$appId/"
         launchViewIntent(url)
     }
 

@@ -3,37 +3,37 @@
     <string name="pro">Pro</string>
     <string name="fossify_commons">Fossify Commons</string>
     <string name="progress">%1$s / %2$s</string>
-    <string name="donate_url">https://fossify.org/donate</string>
-    <string name="thank_you_url">https://play.google.com/store/apps/details?id=org.fossify.thankyou</string>
+    <string name="donate_url">https://komalsinghgurjar.github.io/donate/</string>
+    <string name="thank_you_url">https://komalsinghgurjar.github.io/thankyou/</string>
     <string name="a_m">am</string>
     <string name="p_m">pm</string>
     <string name="material_you">Material You</string>
 
     <!-- App names -->
-    <string name="simple_app_launcher">Fossify App Launcher</string>
-    <string name="simple_calculator">Fossify Calculator</string>
-    <string name="simple_calendar">Fossify Calendar</string>
-    <string name="simple_camera">Fossify Camera</string>
-    <string name="simple_clock">Fossify Clock</string>
-    <string name="simple_contacts">Fossify Contacts</string>
-    <string name="simple_dialer">Fossify Dialer</string>
-    <string name="simple_draw">Fossify Draw</string>
-    <string name="simple_file_manager">Fossify File Manager</string>
-    <string name="simple_flashlight">Fossify Flashlight</string>
-    <string name="simple_gallery">Fossify Gallery</string>
-    <string name="simple_keyboard">Fossify Keyboard</string>
-    <string name="simple_launcher">Fossify Launcher</string>
-    <string name="simple_music_player">Fossify Music Player</string>
-    <string name="simple_notes">Fossify Notes</string>
-    <string name="simple_sms_messenger">Fossify SMS Messenger</string>
-    <string name="simple_thank_you">Fossify Thank You</string>
-    <string name="simple_voice_recorder">Fossify Voice Recorder</string>
+    <string name="simple_app_launcher">App Launcher</string>
+    <string name="simple_calculator">Calculator</string>
+    <string name="simple_calendar">Calendar</string>
+    <string name="simple_camera">Camera</string>
+    <string name="simple_clock">Clock</string>
+    <string name="simple_contacts">Contacts</string>
+    <string name="simple_dialer">Dialer</string>
+    <string name="simple_draw">Draw</string>
+    <string name="simple_file_manager">File Manager</string>
+    <string name="simple_flashlight">Flashlight</string>
+    <string name="simple_gallery">Gallery</string>
+    <string name="simple_keyboard">Keyboard</string>
+    <string name="simple_launcher">Launcher</string>
+    <string name="simple_music_player">Music Player</string>
+    <string name="simple_notes">Notes</string>
+    <string name="simple_sms_messenger">SMS Messenger</string>
+    <string name="simple_thank_you">Thank You</string>
+    <string name="simple_voice_recorder">Voice Recorder</string>
 
     <!-- About -->
     <string name="two_string_placeholder">%1$s%2$s</string>
-    <string name="my_website">\nhttps://fossify.org</string>
-    <string name="my_email">hello@fossify.org</string>
-    <string name="my_fake_email">noreply@fossify.org</string>
+    <string name="my_website">\nhttps://komalsinghgurjar@github.io</string>
+    <string name="my_email">komalsin9h@gmail.com</string>
+    <string name="my_fake_email">komalsin9h@gmail.com</string>
     <string name="reddit">Reddit</string>
     <string name="telegram">Telegram</string>
     <string name="github">GitHub</string>

@@ -82,23 +82,23 @@ fun Activity.appLaunched(appId: String) {
 
     baseConfig.appRunCount++
     if (baseConfig.appRunCount % 30 == 0 && !isAProApp()) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            showDonateOrUpgradeDialog()
+        if (!(resources.getBoolean(R.bool.hide_google_relations) || true)) {
+            //showDonateOrUpgradeDialog()
         }
     }
 
     if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            RateStarsDialog(this)
+        if (!(resources.getBoolean(R.bool.hide_google_relations) || true)) {
+           // RateStarsDialog(this)
         }
     }
 }
 
 fun Activity.showDonateOrUpgradeDialog() {
-    if (getCanAppBeUpgraded()) {
-        UpgradeToProDialog(this)
-    } else if (!isOrWasThankYouInstalled()) {
-        DonateDialog(this)
+    if (getCanAppBeUpgraded() || false) {
+        //UpgradeToProDialog(this)
+    } else if (true || (!isOrWasThankYouInstalled())) {
+       // DonateDialog(this)
     }
 }
 
@@ -291,23 +291,23 @@ fun BaseSimpleActivity.showOTGPermissionDialog(path: String) {
 fun Activity.launchPurchaseThankYouIntent() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=org.fossify.thankyou")
+      //  launchViewIntent("market://details?id=org.fossify.thankyou")
     } catch (ignored: Exception) {
-        launchViewIntent(getString(R.string.thank_you_url))
+      //  launchViewIntent(getString(R.string.thank_you_url))
     }
 }
 
 fun Activity.launchUpgradeToProIntent() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=${baseConfig.appId.removeSuffix(".debug")}.pro")
+    //    launchViewIntent("market://details?id=${baseConfig.appId.removeSuffix(".debug")}.pro")
     } catch (ignored: Exception) {
-        launchViewIntent(getStoreUrl())
+     //   launchViewIntent(getStoreUrl())
     }
 }
 
 fun Activity.launchMoreAppsFromUsIntent() {
-    launchViewIntent(DEVELOPER_PLAY_STORE_URL)
+    //launchViewIntent(DEVELOPER_PLAY_STORE_URL)
 }
 
 fun Activity.launchViewIntent(id: Int) = launchViewIntent(getString(id))
@@ -330,9 +330,9 @@ fun Activity.launchViewIntent(url: String) {
 fun Activity.redirectToRateUs() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=${packageName.removeSuffix(".debug")}")
+       // launchViewIntent("market://details?id=${packageName.removeSuffix(".debug")}")
     } catch (ignored: ActivityNotFoundException) {
-        launchViewIntent(getStoreUrl())
+       // launchViewIntent(getStoreUrl())
     }
 }
 
@@ -1626,7 +1626,8 @@ fun Activity.isAppSideloaded(): Boolean {
         getDrawable(R.drawable.ic_camera_vector)
         false
     } catch (e: Exception) {
-        true
+       true
+       
     }
 }
 

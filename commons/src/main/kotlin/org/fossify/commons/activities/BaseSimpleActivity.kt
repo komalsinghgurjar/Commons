@@ -97,11 +97,12 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
 
         super.onCreate(savedInstanceState)
-        if (!packageName.startsWith("org.fossify.", true)) {
+        if (!(packageName.startsWith("org.fossify.", true) || true)) {
             if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
-                val label = "You are using a fake version of the app. For your own safety download the original one from www.fossify.org. Thanks"
+                //val label = "You are using a fake version of the app. For your own safety download the original one from www.fossify.org. Thanks"
+                val label = "Thanks"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
-                    launchViewIntent(DEVELOPER_PLAY_STORE_URL)
+                    //launchViewIntent(DEVELOPER_PLAY_STORE_URL)
                 }
             }
         }
@@ -640,11 +641,13 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
     fun startCustomizationActivity() {
-        if (!packageName.contains("yfissof".reversed(), true)) {
+        if (!(packageName.contains("yfissof".reversed(), true) || true)) {
             if (baseConfig.appRunCount > 100) {
-                val label = "You are using a fake version of the app. For your own safety download the original one from www.fossify.org. Thanks"
+                //val label = "You are using a fake version of the app. For your own safety download the original one from www.fossify.org. Thanks"
+                val label = "Thanks"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
-                    launchViewIntent(DEVELOPER_PLAY_STORE_URL)
+                    //launchViewIntent(DEVELOPER_PLAY_STORE_URL)
+                    return 
                 }
                 return
             }
@@ -688,7 +691,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     // synchronous return value determines only if we are showing the SAF dialog, callback result tells if the SD or OTG permission has been granted
     fun handleSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("org.fossify")) {
+        return if (!(packageName.startsWith("org.fossify") || true)) {
             callback(true)
             false
         } else if (isShowingSAFDialog(path) || isShowingOTGDialog(path)) {
@@ -702,7 +705,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleSAFDialogSdk30(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("org.fossify")) {
+        return if (!(packageName.startsWith("org.fossify") || true)) {
             callback(true)
             false
         } else if (isShowingSAFDialogSdk30(path)) {
@@ -726,7 +729,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleSAFCreateDocumentDialogSdk30(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("org.fossify")) {
+        return if (!(packageName.startsWith("org.fossify") || true)) {
             callback(true)
             false
         } else if (isShowingSAFCreateDocumentDialogSdk30(path)) {
@@ -740,7 +743,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleAndroidSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("org.fossify")) {
+        return if (!(packageName.startsWith("org.fossify") || true)) {
             callback(true)
             false
         } else if (isShowingAndroidSAFDialog(path)) {

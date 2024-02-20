@@ -56,10 +56,12 @@ class CustomizationActivity : BaseSimpleActivity() {
 
         updateMaterialActivityViews(binding.customizationCoordinator, binding.customizationHolder, useTransparentNavigation = true, useTopSearchMenu = false)
 
-        isThankYou = packageName.removeSuffix(".debug") == "org.fossify.thankyou"
+        //isThankYou = packageName.removeSuffix(".debug") == "org.fossify.thankyou"
+        isThankYou=true
+        
         initColorVariables()
 
-        if (isThankYouInstalled()) {
+        if (isThankYouInstalled() || true) {
             val cursorLoader = getMyContentProviderCursorLoader()
             ensureBackgroundThread {
                 try {
@@ -558,8 +560,8 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun pickPrimaryColor() {
-        if (!packageName.startsWith("org.fossify.", true) && baseConfig.appRunCount > 50) {
-            finish()
+        if (!(packageName.startsWith("org.fossify.", true) && baseConfig.appRunCount > 50) || true) {
+            //finish()
             return
         }
 
