@@ -993,7 +993,7 @@
     <string name="faq_4_title_commons">I don\'t like the widget colors, can I change them?</string>
     <string name="faq_4_text_commons">Yep, as you drag a widget on your home screen a widget config screen appears. You will see colored squares at the bottom left corner, just press them to pick a new color. You can use the slider for adjusting the alpha too.</string>
     <string name="faq_5_title_commons">Can I somehow restore deleted files?</string>
-    <string name="faq_5_text_commons">If they were really deleted, you cannot. However, there is a Recycle Bin enabled by default, it will cause the files just be moved in the Bin instead of deleting them. Sometimes files are deleted but their data persists on storage data recovery experts can help you! If important data lost don't use device and turn off (prevent the data wipe) device and visit an expert.</string>
+    <string name="faq_5_text_commons">If they were really deleted, you cannot. However, there is a Recycle Bin enabled by default, it will cause the files just be moved in the Bin instead of deleting them. Sometimes files are deleted but their data persists on storage data recovery experts can help you. If important data lost pls dont use device and turn it off to prevent the data overwrite and then visit an expert.</string>
     <string name="faq_6_title_commons">The app launcher icon disappeared. What can I do?</string>
     <string name="faq_6_text_commons">This issue arises when your launcher does not fully support icon customization. Attempt launching the app through Google Play or a widget, if accessible.
         After launching, restore the default green icon color #106D1F. In extreme cases, reinstalling the app may be necessary.</string>

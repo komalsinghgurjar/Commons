@@ -647,7 +647,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
                 val label = "Thanks"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
                     //launchViewIntent(DEVELOPER_PLAY_STORE_URL)
-                    return 
+                    
                 }
                 return
             }
