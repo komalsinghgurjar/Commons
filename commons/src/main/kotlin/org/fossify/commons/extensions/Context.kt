@@ -475,7 +475,8 @@ fun Context.getUriMimeType(path: String, newUri: Uri): String {
     return mimeType
 }
 
-fun Context.isThankYouInstalled() = isPackageInstalled("org.fossify.thankyou")
+//fun Context.isThankYouInstalled() = isPackageInstalled("org.fossify.thankyou")
+fun Context.isThankYouInstalled() = true 
 
 fun Context.isOrWasThankYouInstalled(): Boolean {
     return when {
@@ -490,7 +491,9 @@ fun Context.isOrWasThankYouInstalled(): Boolean {
     }
 }
 
-fun Context.isAProApp() = packageName.startsWith("org.fossify.") && packageName.removeSuffix(".debug").endsWith(".pro")
+//fun Context.isAProApp() = packageName.startsWith("org.fossify.") && packageName.removeSuffix(".debug").endsWith(".pro")
+fun Context.isAProApp() = true
+
 
 fun Context.getCustomizeColorsString(): String {
     val textId = if (isOrWasThankYouInstalled()) {
