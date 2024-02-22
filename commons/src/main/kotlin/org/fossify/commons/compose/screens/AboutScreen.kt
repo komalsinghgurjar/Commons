@@ -49,10 +49,10 @@ internal fun HelpUsSection(
     SettingsGroup(title = {
         SettingsTitleTextComponent(text = stringResource(id = R.string.help_us), modifier = startingTitlePadding)
     }) {
-        if (showRateUs) {
+        if (showRateUs && false) {
             TwoLinerTextItem(text = stringResource(id = R.string.rate_us), icon = R.drawable.ic_star_vector, click = onRateUsClick)
         }
-        if (showInvite) {
+        if (showInvite ) {
             TwoLinerTextItem(text = stringResource(id = R.string.invite_friends), icon = R.drawable.ic_add_person_vector, click = onInviteClick)
         }
         TwoLinerTextItem(
@@ -60,7 +60,7 @@ internal fun HelpUsSection(
             text = stringResource(id = R.string.contributors),
             icon = R.drawable.ic_face_vector
         )
-        if (showDonate) {
+        if (showDonate && false) {
             TwoLinerTextItem(
                 click = onDonateClick,
                 text = stringResource(id = R.string.donate),
@@ -86,7 +86,7 @@ internal fun OtherSection(
     SettingsGroup(title = {
         SettingsTitleTextComponent(text = stringResource(id = R.string.other), modifier = startingTitlePadding)
     }) {
-        if (showMoreApps) {
+        if (showMoreApps && false) {
             TwoLinerTextItem(
                 click = onMoreAppsClick,
                 text = stringResource(id = R.string.more_apps_from_us),
